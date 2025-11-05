@@ -1,0 +1,22 @@
+{
+  "name": "adapty-telegram-webhook",
+  "version": "1.0.0",
+  "description": "Webhook server to forward Adapty subscription events to Telegram",
+  "main": "src/index.js",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev",
+    "tail": "wrangler tail"
+  },
+  "keywords": [
+    "adapty",
+    "telegram",
+    "webhook",
+    "notifications"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  }
+}

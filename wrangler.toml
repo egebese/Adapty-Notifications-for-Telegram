@@ -1,0 +1,25 @@
+name = "adapty-telegram-webhook"
+main = "src/index.js"
+compatibility_date = "2024-01-01"
+
+# Optional: Configure custom domain routing
+# Uncomment and configure if you want to use a custom domain
+# [[routes]]
+# pattern = "your-subdomain.your-domain.com/*"
+# zone_name = "your-domain.com"
+
+# Required secrets (use wrangler secret put for sensitive values)
+# wrangler secret put TELEGRAM_BOT_TOKEN
+# wrangler secret put TELEGRAM_CHAT_ID
+# wrangler secret put WEBHOOK_AUTH_TOKEN
+
+[observability]
+enabled = true
+
+[observability.logs]
+enabled = true
+head_sampling_rate = 1
+invocation_logs = true
+
+[vars]
+# Non-sensitive configuration can go here
